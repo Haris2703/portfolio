@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Client ke colors yahan define ho rahe hain */
+  --color-primary: #000000;
+  --color-secondary: #111111;
+  --color-accent-yellow: #FACC15;
+  --color-accent-red: #E11D48;
+  --color-light-gray: #9CA3AF;
+}
+
+:root {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
